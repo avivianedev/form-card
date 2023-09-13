@@ -1,0 +1,42 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.home-container .home-image {
+  width: 50%;
+}
+.home-container .home-image img {
+  width: 100%;
+  height: 100vh;
+}
+.home-container .img-responsive-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+  }
+  .home-container .img-desktop {
+    display: none;
+  }
+  .home-container .img-responsive-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .home-container .img-responsive-mobile img {
+    width: 100%;
+  }
+}
+.home-container .contend {
+  width: 100%;
+  display: flex;
+}/*# sourceMappingURL=Home.css.map */

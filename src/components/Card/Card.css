@@ -1,0 +1,137 @@
+.card-container {
+  width: 100%;
+  top: 15%;
+  right: 0;
+  position: absolute;
+}
+.card-container .card-images {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 2em;
+  height: 100%;
+}
+.card-container .card-images .card-front {
+  margin-left: 30%;
+  position: relative;
+}
+.card-container .card-images .card-front .card-circle {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 999px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.card-container .card-images .card-front .card-circle-thin {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 999px;
+  position: absolute;
+  top: 42px;
+  left: 90px;
+}
+.card-container .card-images .card-front .card-data {
+  padding: 0 2em;
+  position: absolute;
+  top: 50%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.card-container .card-images .card-front .card-data h1 {
+  color: white;
+  font-weight: 100;
+}
+.card-container .card-images .card-front .card-data .card-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 1em;
+}
+.card-container .card-images .card-front .card-data .card-name h2 {
+  font-weight: 100;
+}
+.card-container .card-images .card-back {
+  margin-left: 50%;
+  position: relative;
+}
+.card-container .card-images .card-back .card-cvc {
+  position: absolute;
+  width: 450px;
+  display: flex;
+  top: 45%;
+  justify-content: flex-end;
+  padding-right: 3.5em;
+  font-weight: bold;
+  color: rgb(241, 235, 235);
+}
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    top: 20px;
+  }
+  .card-container .card-images .card-front {
+    top: 100px;
+    right: 20%;
+    z-index: 1;
+  }
+  .card-container .card-images .card-front img {
+    width: 280px;
+    height: 100%;
+  }
+  .card-container .card-images .card-front .card-circle {
+    width: 25px;
+    height: 25px;
+  }
+  .card-container .card-images .card-front .card-circle-thin {
+    width: 15px;
+    height: 15px;
+    top: 36px;
+    left: 70px;
+  }
+  .card-container .card-images .card-front .card-data {
+    width: 280px;
+    padding: 0 1em;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .card-container .card-images .card-front .card-data h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  .card-container .card-images .card-front .card-data .card-name {
+    padding: 0 0.5em;
+  }
+  .card-container .card-images .card-front .card-data .card-name h2 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .card-container .card-images .card-front .card-data .card-name p {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .card-container .card-images .card-back {
+    margin: 0;
+    position: inherit;
+    left: 70px;
+    top: 10%;
+  }
+  .card-container .card-images .card-back img {
+    width: 280px;
+  }
+  .card-container .card-images .card-back .card-cvc {
+    width: 100%;
+    font-size: 14px;
+    top: 42%;
+    padding-right: 3em;
+  }
+}/*# sourceMappingURL=Card.css.map */

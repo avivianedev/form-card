@@ -1,0 +1,175 @@
+.card-container {
+    width: 100%;
+    top: 15%;
+    right: 0;
+    position: absolute;
+
+    .card-images {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 2em;
+        height: 100%;
+
+        .card-front {
+            margin-left: 30%;
+            position: relative;
+
+
+            .card-circle {
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                border: transparent;
+                border-radius: 999px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+
+            .card-circle-thin {
+                width: 20px;
+                height: 20px;
+                border: 1px solid white;
+                border-radius: 999px;
+                position: absolute;
+                top: 42px;
+                left: 90px;
+            }
+
+            .card-data {
+                padding: 0 2em;
+                position: absolute;
+                top: 50%;
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                gap: 1em;
+
+                h1 {
+                    color: white;
+                    font-weight: 100;
+                    font-size: 1.5em;
+                }
+
+                .card-name {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: white;
+                    padding: 0 1em;
+                    font-size: 16px;
+
+                    h2 {
+                        font-size: 16px;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        .card-back {
+            margin-left: 50%;
+            position: relative;
+
+            .card-cvc {
+                position: absolute;
+                width: 450px;
+                display: flex;
+                top: 45%;
+                justify-content: flex-end;
+                padding-right: 3.5em;
+                font-weight: bold;
+                color: rgb(241, 235, 235);
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        top: 20px;
+
+        .card-images {
+
+            .card-front {
+                top: 100px;
+                right: 20%;
+                z-index: 1;
+
+                img {
+                    width: 280px;
+                    height: 100%;
+                }
+
+                .card-circle {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                .card-circle-thin {
+                    width: 15px;
+                    height: 15px;
+                    top: 36px;
+                    left: 70px;
+                }
+
+                .card-data {
+                    width: 280px;
+                    padding: 0 1.5em;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    h1 {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        font-weight: 100;
+                    }
+
+                    .card-name {
+                        padding: 0;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        h2 {
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+
+                        p {
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+                    }
+
+                }
+            }
+
+            .card-back {
+                margin: 0;
+                position: inherit;
+                left: 70px;
+                top: 10%;
+
+
+                img {
+                    width: 280px;
+                }
+
+                .card-cvc {
+                    width: 100%;
+                    font-size: 10px;
+                    top: 44%;
+                    padding-right: 3.5em;
+
+                }
+            }
+
+
+        }
+    }
+
+}

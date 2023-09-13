@@ -1,0 +1,46 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    animation: sliderY 1s;
+
+    @keyframes sliderY {
+        from {
+            transform: translateY(90px);
+        }
+
+        to {
+            transform: translateY(0px)
+        }
+
+    }
+
+
+
+    button {
+        margin-top: 1em;
+        width: 40%;
+        padding: 1em;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #220930;
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 3em;
+
+        button {
+            width: 80%;
+        }
+    }
+}
