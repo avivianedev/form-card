@@ -131,7 +131,7 @@ export default function Form() {
                                     type="number"
                                     placeholder="MM"
                                     {...register("expmonth", { onChange: (e) => { SetExpMonth(e.target.value) } })}
-                                    autofocus
+
                                 />
                                 <div className="error-hidden">
                                     {errors.expmonth && <span className="msg-error-date-exp">{errors.expmonth.message}</span>}
