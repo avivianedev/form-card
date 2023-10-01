@@ -15,6 +15,10 @@
             margin-left: 70%;
             position: relative;
 
+            @media screen and (max-width: 1398px) {
+                margin-left: 40%
+            }
+
 
             .card-circle {
                 background-color: white;
@@ -75,6 +79,10 @@
             margin-left: 100%;
             position: relative;
 
+            @media screen and (max-width: 1398px) {
+                margin-left: 60%
+            }
+
             .card-cvc {
                 position: absolute;
                 width: 450px;
@@ -89,6 +97,8 @@
         }
     }
 
+
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
         top: 5%;
@@ -97,7 +107,7 @@
 
             .card-front {
                 top: 100px;
-                right: 60%;
+                right: 30%;
                 z-index: 1;
 
                 img {
@@ -171,5 +181,9 @@
 
         }
     }
+
+    @media screen and (max-width: 375px) {}
+
+
 
 }
