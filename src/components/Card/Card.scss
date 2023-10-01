@@ -1,6 +1,6 @@
 .card-container {
     width: 100%;
-    top: 15%;
+    top: 20%;
     right: 0;
     position: absolute;
 
@@ -12,7 +12,7 @@
         height: 100%;
 
         .card-front {
-            margin-left: 30%;
+            margin-left: 70%;
             position: relative;
 
 
@@ -72,7 +72,7 @@
         }
 
         .card-back {
-            margin-left: 50%;
+            margin-left: 100%;
             position: relative;
 
             .card-cvc {
@@ -91,13 +91,13 @@
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        top: 20px;
+        top: 5%;
 
         .card-images {
 
             .card-front {
                 top: 100px;
-                right: 20%;
+                right: 60%;
                 z-index: 1;
 
                 img {
