@@ -3,11 +3,11 @@ import { AppContext } from "./AppContext"
 import propTypes from "prop-types";
 
 export const Provider = ({ children }) => {
-    const [cardname, SetCardname] = useState('')
-    const [cardNumber, SetcardNumber] = useState()
-    const [expmonth, SetExpMonth] = useState('')
-    const [year, SetYear] = useState('')
-    const [cvc, Setcvc] = useState()
+    const [cardname, SetCardname] = useState('Felicia Leire')
+    const [cardNumber, SetcardNumber] = useState("9591 6489 6389 101E")
+    const [expmonth, SetExpMonth] = useState('09')
+    const [year, SetYear] = useState('26')
+    const [cvc, Setcvc] = useState('000')
 
 
 

@@ -24,6 +24,21 @@
 
             }
 
+            @media screen and (max-width: 1440px) {
+                margin-left: 30%;
+
+            }
+
+            @media screen and (max-width: 740px) {
+                margin-left: 40%;
+
+            }
+
+            @media screen and (max-width: 375px) {
+                margin-left: 40%;
+
+            }
+
             .card-circle {
                 background-color: white;
                 width: 40px;
@@ -85,6 +100,11 @@
 
             @media screen and (max-width: 1150px) {
                 margin-left: 20%;
+
+            }
+
+            @media screen and (max-width: 1440px) {
+                margin-left: 50%;
 
             }
 
